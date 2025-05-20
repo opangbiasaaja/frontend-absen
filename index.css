@@ -1,0 +1,129 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+/* Header */
+header {
+  background-color: #1E40AF;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Frame untuk form dan kamera */
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.absen-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input Nama & Kelas */
+input[type="text"], select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center; /* opsional */
+}
+
+
+/* Video Kamera */
+video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Tombol Absen */
+button.absen-btn {
+  background-color: #1E40AF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+button.absen-btn:hover {
+  background-color: #3b60f3;
+}
+
+/* Notifikasi */
+.alert {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: none;
+}
+
+.alert.success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.alert.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  input, select {
+    width: 90%;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .frame {
+    width: 100%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+}
+
+.form-group {
+  width: 100%;
+  max-width: 300px; /* awalnya 400px, sekarang lebih ramping */
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+input[type="text"], select {
+  text-align: center;
+}

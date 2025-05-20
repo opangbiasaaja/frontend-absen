@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presensi SMAN 1 CIBINONG</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Presensi SMAN 1 CIBINONG</h1>
+    <img src="https://2.bp.blogspot.com/-b6o4GdvMkRk/W0zQ0cnjyUI/AAAAAAAAPQA/LuxyEjT9A7snzZkABvG52Qw3dl3IvmVxwCLcBGAs/s1600/Logo-SMAN-1-Cibinong-237-design.png" alt="Logo" width="120">
+  </header>
+
+  <div class="absen-form">
+    <input type="text" id="nama" placeholder="Nama">
+
+    <label for="kelas">Kelas:</label>
+    <select id="kelas" size="5" style="overflow-y: scroll;">
+      <option value="X.1 KESEHATAN">X.1 KESEHATAN</option>
+      <option value="X.2 KESEHATAN">X.2 KESEHATAN</option>
+      <option value="X.3 TEKNIK">X.3 TEKNIK</option>
+      <option value="X.4 SAINS">X.4 SAINS</option>
+      <option value="X.5 SAINS">X.5 SAINS</option>
+      <option value="X.6 SAINS">X.6 SAINS</option>
+      <option value="X.7 SOSIAL EKONOMI">X.7 SOSIAL EKONOMI</option>
+      <option value="X.8 SOSHUM">X.8 SOSHUM</option>
+      <option value="X.9 SOSHUM">X.9 SOSHUM</option>
+      <option value="X.10 SOSHUM">X.10 SOSHUM</option>
+
+      <option value="XI.1 KESEHATAN">XI.1 KESEHATAN</option>
+      <option value="XI.2 KESEHATAN">XI.2 KESEHATAN</option>
+      <option value="XI.3 TEKNIK">XI.3 TEKNIK</option>
+      <option value="XI.4 SAINS">XI.4 SAINS</option>
+      <option value="XI.5 SAINS">XI.5 SAINS</option>
+      <option value="XI.6 SAINS">XI.6 SAINS</option>
+      <option value="XI.7 SOSIAL EKONOMI">XI.7 SOSIAL EKONOMI</option>
+      <option value="XI.8 SOSHUM">XI.8 SOSHUM</option>
+      <option value="XI.9 SOSHUM">XI.9 SOSHUM</option>
+      <option value="XI.10 SOSHUM">XI.10 SOSHUM</option>
+
+      <option value="XII.1 KESEHATAN">XII.1 KESEHATAN</option>
+      <option value="XII.2 KESEHATAN">XII.2 KESEHATAN</option>
+      <option value="XII.3 TEKNIK">XII.3 TEKNIK</option>
+      <option value="XII.4 SAINS">XII.4 SAINS</option>
+      <option value="XII.5 SAINS">XII.5 SAINS</option>
+      <option value="XII.6 SAINS">XII.6 SAINS</option>
+      <option value="XII.7 SOSIAL EKONOMI">XII.7 SOSIAL EKONOMI</option>
+      <option value="XII.8 SOSHUM">XII.8 SOSHUM</option>
+      <option value="XII.9 SOSHUM">XII.9 SOSHUM</option>
+      <option value="XII.10 SOSHUM">XII.10 SOSHUM</option>
+    </select>
+
+    <label for="absenceReason">Keterangan:</label>
+    <select id="absenceReason">
+      <option value="hadir">Hadir</option>
+      <option value="sakit">Sakit</option>
+      <option value="izin">Izin Keperluan</option>
+    </select>
+
+    <div id="clock"></div>
+    <div class="frame">
+      <video id="video" autoplay playsinline></video>
+      <button id="capture">Ambil Foto & Kirim</button>
+      <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+  </div>
+</body>
+</html>
